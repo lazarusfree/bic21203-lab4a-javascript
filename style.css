@@ -1,0 +1,99 @@
+/* Shared by Q1, Q2 and Q3. Plain lab-sheet look: system fonts (no external
+   files allowed), one navy accent, nothing decorative. */
+
+:root {
+  --ink: #1a1a1a;
+  --muted: #5a5a5a;
+  --accent: #1b365d;
+  --line: #c9c9c9;
+  --bad: #9b1c1c;
+}
+
+body {
+  margin: 0;
+  padding: 2rem 1.25rem;
+  font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  color: var(--ink);
+  background: #fff;
+}
+
+main {
+  max-width: 34rem;
+  margin: 0 auto;
+}
+
+.course {
+  margin: 0 0 0.25rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+h1 {
+  margin: 0 0 1.5rem;
+  font-size: 1.4rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--accent);
+}
+
+label {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-weight: 600;
+}
+
+input[type="text"] {
+  font: inherit;
+  padding: 0.4rem 0.5rem;
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  width: 12rem;
+}
+
+button {
+  font: inherit;
+  padding: 0.4rem 0.9rem;
+  color: #fff;
+  background: var(--accent);
+  border: 1px solid var(--accent);
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #142845;
+}
+
+button:focus-visible,
+input:focus-visible {
+  outline: 3px solid #e0a800;
+  outline-offset: 2px;
+}
+
+.output {
+  min-height: 1.5em;
+  margin: 1rem 0;
+  padding: 0.5rem 0.75rem;
+  border-left: 4px solid var(--accent);
+  background: #f3f4f6;
+}
+
+.output p {
+  margin: 0;
+}
+
+.output.invalid {
+  border-left-color: var(--bad);
+  color: var(--bad);
+}
+
+ol.output {
+  padding-left: 2.25rem;
+}
+
+nav ul {
+  padding-left: 1.25rem;
+}
+
+nav a {
+  color: var(--accent);
+}
